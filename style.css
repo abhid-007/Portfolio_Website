@@ -1,3 +1,11 @@
+/* Global Font Family */
+@font-face {
+    font-family: ;
+    src: url(./resources/NeueHaasDisplayLight.ttf, ./resources/NeueHaasDisplayMediu.ttf, ./resources/NeueHaasDisplayRoman.ttf);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -35,13 +43,14 @@ nav{
 }
 #nav-part2 h4{
     padding: 10px 20px;
-    border: 1px solid #7f7f7fc7;
+    border: 0.9px solid #2e2d2dec;
     border-radius: 50px;
     font-weight: 400;
     transition: all ease 0.3s;
     color: rgb(35, 35, 35);
     font-size: 16px;
     position: relative;
+    overflow: hidden;
 }
 #nav-part2 h4::after{
     content: "";
@@ -58,12 +67,12 @@ nav{
 #nav-part2 h4:hover::after{
     bottom: 0;
     border-radius: 0;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 #nav-part2 h4 a{
     color: #313131d3;
-    font-family: Helvetica;
+    font-family: ;
     text-decoration: none;
     position: relative;
     z-index: 9;
@@ -72,4 +81,18 @@ nav{
 #nav-part2 h4:hover a{
     color: #fff;
     transition: 0.6s;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    background-color: #d34a00;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#left{
+    width: 30vw;
+    font-size: 2vw;
 }
