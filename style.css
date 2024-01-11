@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'Helvetica Neue', 'Helvetica';
 }
 
 html, body {
@@ -20,7 +20,16 @@ html, body {
     position: relative;
 }
 nav{
+    padding: 2vw 2vw;
     width: 100%;
-    height: 10vh;
     /*background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
 }
