@@ -3,6 +3,14 @@
     font-family: neu;
     src: url(./resources/NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: neu-light;
+    src: url(./resources/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: neu-roman;
+    src: url(./resources/NeueHaasDisplayRoman.ttf);
+}
 
 /* Global Styles */
 
@@ -28,6 +36,30 @@ html, body {
     position: relative;
     padding: 0 2vw;
 }
+
+#logo{
+    font-family: neu;
+    font-size: 30px;
+    text-align: left;
+}
+#logo-hero{
+    position: relative;
+    width: 60px;
+    height: 15px;
+    background-color: #FE320A;
+    border-radius: 0%;
+    left: 0;
+}
+
+#page1 h3 em{
+    font-family: Garamond;
+    font-style: italic;
+    font-size: 2vw;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+
 nav{
     padding: 2vw 2vw;
     width: 100%;
@@ -105,10 +137,315 @@ nav{
 #center h1{
     font-size: 9vw;
     line-height: 7vw;
-    text-align: center;
+    text-align: right;
+    font-family: neu;
 }
-#page video{
-    width: 100%;
-    border-radius: 50px;
 
+#right h1 em {
+    font-family: Garamond;
+    font-style: italic;
+    font-size: 8.5vw;
+    letter-spacing: -7px;
+    text-align: right;
+}
+
+
+#page1 video {
+    position: relative;
+    border-radius: 40px;
+    margin-top: 4vw;
+    width: 100%;
+}
+
+
+#hero-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    background: linear-gradient(#FE320A, #FE5B1C);
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 63vh;
+    filter: blur(20px);
+}
+
+#hero-1{
+    background: linear-gradient(#FE320A, #FE5B1C);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur (10px);
+    position: absolute;
+}
+
+#hero-2{
+    background: linear-gradient(#FE320A, #FE5B1C);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur (25px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#hero-3{
+    background: linear-gradient(#FE320A, #FE5B1C);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur (25px);
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime{
+    from{
+        transform: translate(55%, -10%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2{
+    from{
+        transform: translate(5%, -5%);
+    }
+    to{
+        transform: translate(-20%, 30%);
+    }
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 6vw 0vw;
+    position: relative;
+
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: motion;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+#moving-text h1{
+    font-size: 8vw;
+    display: inline-block;
+}
+#gola{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+@keyframes motion {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+#page2-bottom{
+    width: 100%;
+    height: 80vh;
+    font-family: neu;
+    font-weight: 100;
+    background-color: #EFEAE3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw; 
+
+}
+
+#page2-bottom h1{
+    font-size: 4.7vw;
+    font-family: neu;
+    text-align: left;
+    padding: 2vw 0vw;
+    width: 55%;
+    line-height: 4.5vw;
+    position: relative;
+    z-index: 9;
+}
+
+#page2-bottom h1 em{
+    font-family: Garamond;
+    font-style: italic;
+    font-size: 5.3vw;
+    letter-spacing: -5px;
+    text-align: left;
+}
+
+#bottom-part2{
+    width: 23%;
+    background-color: #EFEAE3;
+    position: relative;
+    top: 120px;
+}
+
+#bottom-part2 img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+#bottom-part2 p{
+   font-size: 1.1vw;
+   font-family: neu-light;
+   text-align: left;
+   margin-top: 1.5vw;
+} 
+
+#page2 #naya-gola{
+    height: 32vw;
+    width: 38vw;
+    position: absolute;
+    background: linear-gradient(to top right,#FE340D, #FE340D, #fe790d, #ffc32b);
+    border-radius: 50%;
+    top: 50%;
+    left: 20%;
+    filter: blur(25px);
+
+    animation-name: hello;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes hello{
+    from {
+        transform: translate(12%, -10%) skew(0);
+    }
+    to {
+        transform: translate(-12%, 10%) skew(15deg);
+    }
+}
+
+#page2 #naya-gola2{
+    height: 22vw;
+    width: 18vw;
+    position: absolute;
+    background: linear-gradient(to top right,#FE340D, #FE340D, #fe790d, #ffc32b);
+    border-radius: 50%;
+    top: 50%;
+    left: 20%;
+    filter: blur(30px);
+
+    animation-name: hello;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes hello2 {
+    from {
+        transform: translate(30%, -10%) skew(0);
+    }
+    to {
+        transform: translate(-30%, 10%) skew(180deg);
+    }
+    
+}
+
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0vw;
+
+}
+
+#header {
+    display: inline-block;
+    align-items: center;
+    
+}
+
+
+#header p{
+    height: 10vh;
+    width: 20vw;
+    font-size: 1vw;
+    font-family: neu-light;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    padding-left: 0.5vw;
+    
+
+}
+
+ #chota-gola{
+    height: 0.8vw;
+    width: 0.8vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    display: inline-block;
+    margin-left: 4.5vw; 
+    
+    
+} 
+
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    border-bottom: 1px solid #38383864;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%; 
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay{
+    top: 0;
 }
