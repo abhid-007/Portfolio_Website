@@ -449,3 +449,18 @@ nav{
 .elem:hover .overlay{
     top: 0;
 }
+#elem-container{
+    
+}
+
+#fixed-image{
+    height: 27vw;
+    width: 24vw;
+    background-color: red;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 30%;
+    display: none;
+}
