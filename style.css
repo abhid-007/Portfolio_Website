@@ -59,7 +59,6 @@ html, body {
     text-align: left;
 }
 
-
 nav{
     padding: 2vw 2vw;
     width: 100%;
@@ -254,8 +253,8 @@ nav{
     display: inline-block;
 }
 #gola{
-    height: 70px;
-    width: 70px;
+    height: 4vw;
+    width: 4vw;
     border-radius: 50%;
     background-color: #FE320A;
     display: inline-block;
@@ -319,6 +318,7 @@ nav{
    font-family: neu-light;
    text-align: left;
    margin-top: 1.5vw;
+   position: relative;
 } 
 
 #page2 #naya-gola{
@@ -462,7 +462,7 @@ nav{
     z-index: 99;
     left: 50%;
     top: 25%;
-    
+    display: none;
     background-size: cover;
     background-position: center;
 
