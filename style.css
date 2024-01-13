@@ -454,13 +454,16 @@ nav{
 }
 
 #fixed-image{
-    height: 27vw;
+    height: 30vw;
     width: 24vw;
     background-color: red;
-    border-radius: 20px;
+    border-radius: 15px;
     position: fixed;
     z-index: 99;
     left: 50%;
-    top: 30%;
-    display: none;
+    top: 25%;
+    
+    background-size: cover;
+    background-position: center;
+
 }
